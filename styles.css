@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Qetod";
+  src: url("./assets/fonts/Qetod.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section:not(#hero) {
+  padding: 2rem;
+}
+
+#hero {
+  position: relative;
+  background: url("./assets/img/tanjiro.png") no-repeat top;
+  background-size: cover;
+  height: 95vh;
+  z-index: 0;
+/*   margin-bottom: 5rem; */
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.heroSearch {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  z-index: 3;
+}
+
+.heroSearchBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.heroCopies {
+  position: relative;
+  padding: 2rem;
+  z-index: 3;
+}
+
+#output {
+  display: none;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
+#output h2 {
+  margin-bottom: 2rem;
+}
+
+.outputContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.quickInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
